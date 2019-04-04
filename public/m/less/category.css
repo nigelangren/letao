@@ -88,3 +88,34 @@ img {
   align-items: center;
   color: white;
 }
+#main {
+  display: flex;
+}
+#main .boxleft {
+  position: relative;
+  width: 89px;
+}
+#main .boxleft ul .mui-table-view-cell:after {
+  left: 0;
+}
+#main .boxright {
+  flex: 1;
+  position: relative;
+}
+#main .boxright .mui-row {
+  padding: 11px;
+}
+#main .boxright .mui-row .mui-col-xs-4 a {
+  display: block;
+  text-align: center;
+}
+#main .boxright .mui-row .mui-col-xs-4 a img {
+  width: 100%;
+  height: 52px;
+}
+#main .boxright .mui-row .mui-col-xs-4 a span {
+  color: #8f8f94;
+  margin-bottom: 12px;
+  display: block;
+  background-color: white;
+}
