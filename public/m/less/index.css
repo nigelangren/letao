@@ -1,0 +1,146 @@
+html {
+  font-size: 26.6667vw;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.14rem;
+  line-height: 0.14rem;
+}
+img {
+  vertical-align: middle;
+}
+#header {
+  display: flex;
+  background-color: #006699;
+  height: .45rem;
+}
+#header .left {
+  width: .45rem;
+  height: .45rem;
+}
+#header .center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#header .center h4 {
+  font-weight: normal;
+  color: white;
+}
+#header .right {
+  width: .45rem;
+  height: .45rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#header .right a {
+  color: white;
+}
+#main {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+#footer {
+  height: .45rem;
+  background-color: #006699;
+}
+#footer .mui-row {
+  height: 100%;
+}
+#footer .mui-row > div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#footer .mui-row > div a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+#nav {
+  padding: 10px;
+}
+#nav .mui-row > div a {
+  display: block;
+}
+#nav .mui-row > div a img {
+  width: 100%;
+}
+#banner {
+  padding: 0 10px;
+}
+#banner .mui-col-xs-8 a {
+  display: block;
+}
+#banner .mui-col-xs-8 a img {
+  width: 100%;
+  height: 120px;
+}
+#banner .mui-col-xs-4 a {
+  display: block;
+}
+#banner .mui-col-xs-4 a img {
+  width: 100%;
+  height: 240px;
+}
+#brand {
+  padding: 10px;
+}
+#brand .title a {
+  display: block;
+}
+#brand .title a img {
+  width: 100%;
+}
+#brand .mui-row > div a {
+  display: block;
+}
+#brand .mui-row > div a img {
+  width: 100%;
+}
+#sport {
+  padding: 10px;
+}
+#sport .title a {
+  display: block;
+}
+#sport .title a img {
+  width: 100%;
+}
+#sport .mui-row .mui-col-xs-6 a {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  border: 0.01rem solid #ccc;
+  text-align: center;
+  padding: 10px 0;
+}
+#sport .mui-row .mui-col-xs-6 a p {
+  margin-bottom: .14rem;
+}
+#sport .mui-row .mui-col-xs-6 a img {
+  width: 100%;
+}
+#sport .mui-row .mui-col-xs-6 a button {
+  background-color: #007aff;
+  color: white;
+}
