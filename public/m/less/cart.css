@@ -70,31 +70,6 @@ img {
 #main .mui-input-group input {
   font-size: 0.14rem;
 }
-#main .search-form {
-  display: flex;
-  padding: 10px;
-}
-#main .search-form input {
-  height: .34rem;
-  flex: 1;
-  text-align: left;
-  background-color: white;
-  border: 0.01rem solid #006699;
-  margin-bottom: 0;
-  border-bottom-right-radius: 0;
-  border-top-right-radius: 0;
-  font-size: .14rem;
-}
-#main .search-form button {
-  width: .6rem;
-  height: .34rem;
-  background-color: #006699;
-  color: white;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  border-radius: 0 0.06rem 0.06rem 0;
-  border-left: 0;
-}
 #footer {
   height: .45rem;
   background-color: #006699;

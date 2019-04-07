@@ -116,3 +116,43 @@ img {
   align-items: center;
   color: white;
 }
+#main {
+  background-color: white;
+}
+#main .mui-card {
+  margin: 0;
+}
+#main .mui-card .mui-card-header {
+  background-color: #ccc;
+}
+#main .mui-card .mui-card-header a {
+  font-size: .14rem;
+  color: #666;
+}
+#main .mui-card .mui-card-header a.active {
+  color: red;
+}
+#main .mui-card .mui-card-content .mui-col-xs-6 {
+  padding: 5px;
+}
+#main .mui-card .mui-card-content .mui-col-xs-6 .left {
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 5px 0;
+}
+#main .mui-card .mui-card-content .mui-col-xs-6 .left p {
+  line-height: .18rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+#main .mui-card .mui-card-content .mui-col-xs-6 .left img {
+  width: 100%;
+}
+#main .mui-card .mui-card-content .mui-col-xs-6 .left button {
+  background-color: #007aff;
+  color: white;
+  border: .01rem solid #007aff;
+}

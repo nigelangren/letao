@@ -116,3 +116,21 @@ img {
   align-items: center;
   color: white;
 }
+#main {
+  background-color: white;
+}
+#main .smallmain .mui-card-content {
+  height: 400px;
+}
+#main .smallmain .mui-card-header span {
+  background-color: white;
+  font-size: .14rem;
+  color: #666;
+}
+#main .smallmain .mui-card-header a {
+  font-size: .14rem;
+  color: #666;
+}
+#main .smallmain .mui-table-view-cell:after {
+  left: 0;
+}

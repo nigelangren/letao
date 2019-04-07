@@ -67,6 +67,9 @@ img {
   overflow: hidden;
   position: relative;
 }
+#main .mui-input-group input {
+  font-size: 0.14rem;
+}
 #footer {
   height: .45rem;
   background-color: #006699;
@@ -94,6 +97,9 @@ img {
 #main .boxleft {
   position: relative;
   width: 89px;
+}
+#main .boxleft ul li.active {
+  background-color: #ccc;
 }
 #main .boxleft ul .mui-table-view-cell:after {
   left: 0;

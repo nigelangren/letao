@@ -10,7 +10,7 @@
     <!-- <link rel="stylesheet" href="./lib/mui/css/mui.min.css"> -->
     <link rel="stylesheet" href="./lib/mui/css/mui.css">
     <link rel="stylesheet" href="./lib/fontAwesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./less/category.css">
+    <link rel="stylesheet" href="./less/search.css">
 </head>
 
 <body>
@@ -19,30 +19,33 @@
             <a href="#" class="fa fa-arrow-left"></a>
         </div>
         <div class="center">
-            <form action="#">
-                <input type="search" placeholder="请输入要搜索的商品">
-            </form>
+            <h4>搜索中心</h4>
         </div>
         <div class="right">
-            <a href="./search.html" class="fa fa-search"></a>
+
         </div>
     </header>
     <main id="main">
-        <div class="boxleft">
-            <div class="mui-scroll-wrapper">
-                <div class="mui-scroll">
-                    <ul class="mui-table-view">
-                        <li class="mui-table-view-cell">运动馆</li>
-                    </ul>
+        <form action="#" class="search-form">
+            <input type="search" id="but" placeholder="请输入要搜索的商品">
+            <button type="button" id="btn" class="mui-btn mui-btn-primary mui-btn-outlined">搜索</button>
+        </form>
+        <div class="smallmain">
+            <div class="mui-card">
+                <!--页眉，放置标题-->
+                <div class="mui-card-header">
+                    <span>搜索历史</span>
+                    <a href="#" class="fa fa-trash btn-clear">清空记录</a>
                 </div>
-            </div>
 
-        </div>
-        <div class="boxright">
-            <div class="mui-scroll-wrapper">
-                <div class="mui-scroll">
-                    <div class="mui-row">
-                        <div class="mui-col-xs-4"><a href="#"><img src="./images/brand2.png" alt=""><span>阿迪</span></a></div>
+                <!--内容区-->
+                <div class="mui-card-content">
+                    <div class="mui-scroll-wrapper">
+                        <div class="mui-scroll">
+                            <ul class="mui-table-view">
+                                
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -63,7 +66,7 @@
                 </a>
             </div>
             <div class="mui-col-xs-3">
-                <a href="#">
+                <a href="./cart.html">
                     <i class="fa fa-shopping-cart"></i>
                     <span>购物车</span>
                 </a>
@@ -76,32 +79,25 @@
             </div>
         </div>
     </footer>
-    <script id="boxleft" type="text/html">
-        {{each rows value index}}
-            {{if value.id == 1 }}
-            <li class="mui-table-view-cell active" data-id='{{value.id}}' >{{value.categoryName}}</li>
-            {{else}}
-            <li class="mui-table-view-cell" data-id='{{value.id}}' >{{value.categoryName}}</li>
-            {{/if}}
-        {{/each}}
-        
-    </script>
-    <script id="boxright" type="text/html">
-        
-        {{if rows.length <= 0 }}
-        <p>没有商品</p>
-        {{else}}
-        {{each rows value index}}
-        <div class="mui-col-xs-4"><a href="#"><img src="{{ value.brandLogo }}" alt=""><span>{{value.brandName}}</span></a></div>
-        {{/each}}
-        {{/if}}
-
-        
+    <script type="text/html" id="queryHistory">
+        <!-- <div class="mui-scroll-wrapper">
+            <div class="mui-scroll"> -->
+                <ul class="mui-table-view">
+                    {{each rows value index}}
+                    <li class="mui-table-view-cell">
+                        <a href="./productlist.html?search={{value}}">{{value}}</a>
+                        <span class="mui-badge fa fa-close" data-index={{index}}></span>
+                    </li>
+                    {{/each}}
+                </ul>
+            <!-- </div>
+        </div> -->
     </script>
     <script src="./lib/zepto/zepto.min.js"></script>
     <script src="./lib/mui/js/mui.min.js"></script>
     <script src="./lib/artTemplate/template-web.js"></script>
-    <script src="./js/category.js"></script>
+    <script src="./js/search.js"></script>
+
 </body>
 
 </html>
