@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./lib/less/index.css">
+</head>
+
+<body>
+    <main id="main">
+        <section id="left">
+            <div class="logo">
+                <img src="./images/my_logo.jpg" alt="">
+                <p>小可爱</p>
+            </div>
+            <ul class="list-group">
+                <li class="list-group-item "><a href="#">用户管理</a></li>
+                <li class="list-group-item" data-toggle="collapse" href="#collapseExample">
+                    <a href="#" class="active" >分类管理</a>
+                    <div class="collapse" id="collapseExample">
+                        <div class="well">
+                            <a href="categoryFirst.html" class="yjfl">一级分类</a>
+                            <a href="#">二级分类</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item"><a href="#">商品管理</a></li>
+            </ul>
+        </section>
+        <section id="right">
+            <header class="title">
+                <a href="#" class="glyphicon glyphicon-th-list"></a>
+                <a href="#" class="glyphicon glyphicon-remove">退出</a>
+            </header>
+            <div class="content">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>用户名</th>
+                            <th>电话</th>
+                            <th>状态</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tby">
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>itcast</td>
+                            <td>15102324243</td>
+                            <td>已启用</td>
+                            <td><button type="button" class="btn btn-danger">禁用</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>itcast</td>
+                            <td>15102324243</td>
+                            <td>已启用</td>
+                            <td><button type="button" class="btn btn-danger">禁用</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>itcast</td>
+                            <td>15102324243</td>
+                            <td>已启用</td>
+                            <td><button type="button" class="btn btn-danger">禁用</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <ul id="page"></ul>
+            </div>
+        </section>
+
+
+    </main>
+
+    <script id="userInfoTpl" type="text/html">
+        {{each rows value index}}
+        <tr>
+            <th scope="row">{{value.id}}</th>
+            <td>{{value.username}}</td>
+            <td>{{value.mobile}}</td>
+            {{if value.isDelete}}
+            <td>已启用</td>
+            <td><button type="button" class="btn btn-danger" data-is-delete={{value.isDelete}}
+                    data-id={{value.id}}>禁用</button></td>
+            {{else}}
+            <td>已禁用</td>
+            <td><button type="button" class="btn btn-success" data-is-delete={{value.isDelete}}
+                    data-id={{value.id}}>启用</button></td>
+            {{/if}}
+        </tr>
+        {{/each}}
+    </script>
+    <script src="./lib/jquery/jquery.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.js"></script>
+    <!-- <script src="./lib/artTemplate/template.js"></script>
+     -->
+    <script src="./lib/bootstrap/js/bootstrap-paginator.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

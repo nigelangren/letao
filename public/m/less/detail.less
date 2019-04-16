@@ -1,0 +1,53 @@
+@import 'base.less';
+#main{
+    .mui-slider{
+        .mui-slider-group{
+            .mui-slider-item{
+                img{
+                    height: 3rem;
+                }
+            }
+        }
+    } 
+    
+    .mui-table-view{
+        // padding: 10px;
+        .mui-table-view-cell{
+            strong{
+                line-height: .21rem;
+            }
+            >span{
+                font-weight: 800;
+                color: red;
+            }
+            >div{
+                line-height: .3rem;
+            }
+            button{
+                margin-bottom: .05rem;
+            }
+            &:after{
+                left: 0;
+            }
+        }
+    }
+}
+#footer{
+    background-color: #cccccc;
+    .mui-row{
+        .mui-col-xs-2{
+            a{
+                font-size: .2rem;
+                &::before{
+                    color: #333;
+                }
+            }
+        }
+        .mui-col-xs-5{
+            padding: .05rem;
+            >button{
+                width: 100%;
+            }
+        }
+    }
+}

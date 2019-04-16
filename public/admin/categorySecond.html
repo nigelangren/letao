@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./lib/less/index.css">
+</head>
+
+<body>
+    <main id="main">
+        <section id="left">
+            <div class="logo">
+                <img src="./images/my_logo.jpg" alt="">
+                <p>小可爱</p>
+            </div>
+            <ul class="list-group">
+                <li class="list-group-item "><a href="#">用户管理</a></li>
+                <li class="list-group-item" data-toggle="collapse" href="#collapseExample">
+                    <a href="#" class="active">分类管理</a>
+                    <div class="collapse in" id="collapseExample">
+                        <div class="well">
+                            <a href="#" class="yjfl">一级分类</a>
+                            <a href="#" class="active ejfl">二级分类</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item"><a href="#">商品管理</a></li>
+            </ul>
+        </section>
+        <section id="right">
+            <header class="title">
+                <a href="#" class="glyphicon glyphicon-th-list"></a>
+                <a href="#" class="glyphicon glyphicon-remove">退出</a>
+            </header>
+            <div class="content">
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                    添加品牌
+                </button>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>品牌编号</th>
+                            <th>品牌名称</th>
+                            <th>品牌logo</th>
+                            <th>所属分类</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tby">
+                        <tr>
+                            <th scope="row"><input type="checkbox"></th>
+                            <td>5</td>
+                            <td>阿萨德2</td>
+                            <td><img src="/mobile/images/brand5.png" alt=""></td>
+                            <td>女士馆</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><input type="checkbox"></th>
+                            <td>5</td>
+                            <td>阿萨德2</td>
+                            <td><img src="/mobile/images/brand5.png" alt=""></td>
+                            <td>女士馆</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><input type="checkbox"></th>
+                            <td>5</td>
+                            <td>阿萨德2</td>
+                            <td><img src="/mobile/images/brand5.png" alt=""></td>
+                            <td>女士馆</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                <ul id="page"></ul>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">添加分类</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group clearfix">
+                        <label for="inputEmail3" class="control-label">分类名称：</label>
+                        <div class="category-form">
+                            <select name="" class="form-control select-category">
+                                <option value="1">运动馆</option>
+                                <option value="2">女士馆</option>
+                                <option value="3">男士馆</option>
+                                <option value="4">帆布馆</option>
+                                <option value="5">户外管</option>
+                                <option value="6">123</option>
+                                <option value="7"></option>
+                                <option value="8">123123</option>
+                                <option value="9"></option>
+                                <option value="10">123</option>
+                                <option value="11">luguan</option>
+                                <option value="12">123123</option>
+                                <option value="13">12313</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group clearfix">
+                        <label for="inputEmail3" class="control-label">品牌名称：</label>
+                        <div class="category-form">
+                            <input type="text" class="form-control input-brand" id="inputEmail3" placeholder="请输入分类名称">
+                        </div>
+                    </div>
+                    <div class="form-group  clearfix">
+                        <label for="inputEmail3" class="control-label">品牌图片：</label>
+                        <div class="category-form">
+                            <input type="file" class="form-control brand-img-file select-img" id="inputEmail3" placeholder="请选择图片">
+                        </div>
+                    </div>
+                    <img src="images/1.png" class="show-img" alt="">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary btn-baocun" data-dismiss="modal">保存</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script id="userInfoTpl" type="text/html">
+        {{each rows value index}}
+        <tr>
+            <th scope="row"><input type="checkbox"></th>
+            <td>{{value.id}}</td>
+            <td>{{value.brandName}}</td>
+            <td><img src="{{value.brandLogo}}" alt=""></td>
+            <td>{{value.categoryName}}</td>
+        </tr>
+        {{/each}}
+    </script>
+    <script src="./lib/jquery/jquery.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.js"></script>
+    <!-- <script src="./lib/artTemplate/template.js"></script>
+     -->
+    <script src="./lib/bootstrap/js/bootstrap-paginator.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <script src="./js/categorySecond.js"></script>
+</body>
+
+</html>

@@ -1,6 +1,78 @@
 @import 'base.less';
 
+#main{
+    .mui-pull-left{
+        .mui-media-object{
+            max-width: .8rem;
+            height: .8rem;
+        }
+        .mui-left{
+            text-align: center;
+            >input{
+                &::before{
+                    font-size: .18rem;
+                    color: pink;
+                }
+                position: static;
+                // margin-left: .2rem;
+            }
+        }
+    }
+    .mui-media-body{
+        white-space:normal;
+        p{
+            line-height: .22rem;
+        }
+        >div{
+            padding: 6px;
+            line-height: .2rem;
+        }
+        .product-price{
+            strong{
+                color: red;
+                // font-weight: 800px;
+            }
+        }
+        .product-params{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
 
 
-
-
+}
+#section{
+    position: fixed;
+    bottom: 0.45rem;
+    left: 0;
+    width: 100%;
+    height: 0.35rem;
+    display: flex;
+    justify-content: space-between;
+    line-height: 0.35rem;
+    border-top: 0.01rem solid #cccccc;
+    background-color: white;
+    z-index: 999;
+     .order-total{
+        padding-left: 0.2rem;
+        color: red;
+        font-weight: 600;
+    }
+    .mui-btn-danger{
+        color: #fff;
+        border: 0.01rem solid #dd524d;
+        background-color: #dd524d;
+    }
+}
+.mui-popup{
+    .mui-popup-text{
+        .mui-table-view-cell{
+            padding: 0;
+            line-height: 35px;
+            text-align: left;
+            button{
+                margin-bottom: .03rem;
+            }
+        }
+    }
+}

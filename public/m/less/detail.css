@@ -116,65 +116,37 @@ img {
   align-items: center;
   color: white;
 }
-#main .mui-pull-left .mui-media-object {
-  max-width: .8rem;
-  height: .8rem;
+#main .mui-slider .mui-slider-group .mui-slider-item img {
+  height: 3rem;
 }
-#main .mui-pull-left .mui-left {
-  text-align: center;
+#main .mui-table-view .mui-table-view-cell strong {
+  line-height: .21rem;
 }
-#main .mui-pull-left .mui-left > input {
-  position: static;
-}
-#main .mui-pull-left .mui-left > input::before {
-  font-size: .18rem;
-  color: pink;
-}
-#main .mui-media-body {
-  white-space: normal;
-}
-#main .mui-media-body p {
-  line-height: .22rem;
-}
-#main .mui-media-body > div {
-  padding: 6px;
-  line-height: .2rem;
-}
-#main .mui-media-body .product-price strong {
+#main .mui-table-view .mui-table-view-cell > span {
+  font-weight: 800;
   color: red;
 }
-#main .mui-media-body .product-params {
-  display: flex;
-  justify-content: space-between;
+#main .mui-table-view .mui-table-view-cell > div {
+  line-height: .3rem;
 }
-#section {
-  position: fixed;
-  bottom: 0.45rem;
+#main .mui-table-view .mui-table-view-cell button {
+  margin-bottom: .05rem;
+}
+#main .mui-table-view .mui-table-view-cell:after {
   left: 0;
+}
+#footer {
+  background-color: #cccccc;
+}
+#footer .mui-row .mui-col-xs-2 a {
+  font-size: .2rem;
+}
+#footer .mui-row .mui-col-xs-2 a::before {
+  color: #333;
+}
+#footer .mui-row .mui-col-xs-5 {
+  padding: .05rem;
+}
+#footer .mui-row .mui-col-xs-5 > button {
   width: 100%;
-  height: 0.35rem;
-  display: flex;
-  justify-content: space-between;
-  line-height: 0.35rem;
-  border-top: 0.01rem solid #cccccc;
-  background-color: white;
-  z-index: 999;
-}
-#section .order-total {
-  padding-left: 0.2rem;
-  color: red;
-  font-weight: 600;
-}
-#section .mui-btn-danger {
-  color: #fff;
-  border: 0.01rem solid #dd524d;
-  background-color: #dd524d;
-}
-.mui-popup .mui-popup-text .mui-table-view-cell {
-  padding: 0;
-  line-height: 35px;
-  text-align: left;
-}
-.mui-popup .mui-popup-text .mui-table-view-cell button {
-  margin-bottom: .03rem;
 }

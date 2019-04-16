@@ -5,8 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./lib/less/login.css">
 </head>
 <body>
-    自己写的PC后台登录
+    <form class="form-horizontal">
+        <img src="./images/1.png" alt="">
+        <div class="form-group">
+          <label for="inputEmail3" class="col-xs-2 control-label ">用户名</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control admin" id="inputEmail3" placeholder="Email" value="">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputPassword3" class="col-xs-2 control-label ">密码</label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control password" id="inputPassword3" placeholder="Password" value="">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-xs-12">
+            <button type="button" class="btn btn-default btn-admin">登录</button>
+          </div>
+        </div>
+      </form>
+
+
+    <script src="./lib/jquery/jquery.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.js"></script>
+    <script src="./js/login.js"></script>
 </body>
 </html>

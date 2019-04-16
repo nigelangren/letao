@@ -1,0 +1,106 @@
+#main {
+  height: 100vh;
+  display: flex;
+}
+#main #left {
+  width: 200px;
+  height: 100%;
+  background-color: skyblue;
+}
+#main #left .logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+#main #left .logo img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 10px solid #fff;
+  box-shadow: 0px 0px 5px hotpink;
+}
+#main #left .logo p {
+  margin-top: 10px;
+}
+#main #left .list-group li {
+  background-color: transparent;
+  border: transparent;
+  padding: 0;
+}
+#main #left .list-group li a {
+  padding: 15px;
+  height: 100%;
+  width: 100%;
+  color: #555;
+  display: block;
+  text-decoration: none;
+}
+#main #left .list-group li a.active {
+  background-color: hotpink;
+  border-color: hotpink;
+}
+#main #left .list-group li a:hover {
+  background-color: hotpink;
+  border-color: hotpink;
+}
+#main #left .list-group li .well {
+  background-color: transparent;
+  border: transparent;
+  padding: 0;
+  overflow: hidden;
+}
+#main #left .list-group li .well a {
+  margin-left: 15px;
+}
+#main #right {
+  flex: 1;
+  height: 100%;
+}
+#main #right .title {
+  padding: 20px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#main #right .title a {
+  font-size: 20px;
+}
+#main #right .title a:nth-of-type(1) {
+  padding: 10px;
+  color: white;
+  background-color: yellowgreen;
+}
+#main #right .content {
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+#main #right .content .table {
+  text-align: center;
+}
+#main #right .content .table th {
+  text-align: center;
+}
+#main #right .content .table img {
+  width: 165px;
+  height: 85px;
+}
+#myModal .modal-body input {
+  width: 500px;
+  display: inline-block;
+}
+#myModal .modal-body .form-group {
+  display: flex;
+  align-items: center;
+}
+#myModal .modal-body .form-group .form-control {
+  width: 480px;
+}
+#myModal .modal-body img {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  display: block;
+}
